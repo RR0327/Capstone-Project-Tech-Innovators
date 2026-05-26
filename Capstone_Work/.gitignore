@@ -1,0 +1,35 @@
+# --- Environments ---
+.venv/
+venv/
+venv*/
+*.env
+
+# --- Python & IDE ---
+__pycache__/
+*.py[cod]
+*$py.class
+.vscode/
+.idea/
+
+# --- OS Specific ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Media & Research Data ---
+# Ignores the folders and all nested content
+
+RoboFlow/
+Momo_Hut/
+momo_hut_frames/
+clean_data/
+momo_hut_normal/
+
+# --- Model Weights ---
+# Prevents large binary files from bloating your Git history
+*.pth
+*.onnx
+*.weights
+
+# ...But do NOT ignore the .gitkeep file itself
+!.gitkeep
