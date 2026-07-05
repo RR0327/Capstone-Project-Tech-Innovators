@@ -17,7 +17,7 @@ Here is a visual map of how we will structure your Flask application to keep it 
 
 Let's organize your production-ready workspace. Since you are moving from Google Colab, here is how you should structure your local application files:
 
-```text
+```bash
 intrusion_system/
 │
 ├── app.py                  # Main Flask Server (Web Routes & API Webhooks)
@@ -43,7 +43,7 @@ Here is the exact production-ready setup for your core backend structures.
 
 Create this file locally and run `pip install -r requirements.txt`. It includes the exact packages needed to link Flask to PostgreSQL and run your YOLO weights:
 
-```text
+```bash
 Flask==3.0.2
 psycopg2-binary==2.9.9
 ultralytics==8.1.0
@@ -285,5 +285,3 @@ Because it is built completely in standard Flask:
 1. When you deploy it locally on your computer, you just run `python app.py`.
 2. The `ai_thread` automatically spins out in the background, opening the camera stream and processing frames.
 3. The main thread runs Flask normally at `http://localhost:5000`, keeping it ready to receive inputs or load your dashboard without dropping frames.
-
-Let me know if you want to write the HTML dashboard to display these PostgreSQL logs, or if you need to set up the SQL table configurations next, bro!
